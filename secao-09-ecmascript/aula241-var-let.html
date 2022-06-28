@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Operadores de declaração de variáveis: Var e Let</title>
+        <script>
+
+            var serie = 'Friends'
+
+            function x() {
+                var serie = 'Game Of Thrones'
+                console.log('Função: ' + serie)
+
+                if(true) {
+                    console.log('Bloco dentro da função: ' + serie)
+                }
+
+            }
+
+            x()
+
+            if(true) {
+                let serie = 'The Walking Dead' // O operador LET não eleva a variável ao bloco superior ao qual foi criado
+                console.log('Bloco global: ' + serie)
+            }
+
+            console.log('Global: ' + serie)
+
+        </script>
+    </head>
+    <body>
+
+        <!--
+            O 'let' é uma das features do ES6, e assim como o 'var', o let consiste em um operador de declaração de variável. Sua diferença é que o let preserva qual o escopo que a variável foi criada.
+        -->
+
+    </body>
+</html>

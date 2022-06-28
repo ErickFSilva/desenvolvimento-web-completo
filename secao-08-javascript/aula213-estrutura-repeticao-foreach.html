@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Estrutura de repetição: Foreach</title>
+        <script>
+
+            var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+
+            var funcionarios = function(valor, indice) {
+                console.log(valor, indice)
+            }
+
+            listaFuncionarios.forEach(funcionarios)
+
+            
+            var listaNomes = Array()
+            listaNomes['x'] = 'Erick'
+            listaNomes[false] = 'Raquezia'
+            listaNomes[3] = 'Gabriel'
+            listaNomes[27] = 'Gabriely'
+            listaNomes[-12] = 'Sara'
+
+            var nomes = function(valor, indice) {
+                console.log(valor, indice)
+            }
+
+            listaNomes.forEach(nomes)
+
+            /*
+                var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+
+                console.log(listaFuncionarios)
+                document.write(listaFuncionarios[3])
+
+                listaFuncionarios.forEach(function(valor, indice, array) {
+                    console.log('índice: ' + indice + ' | valor: ' + valor)
+                    
+                    if(valor == 'Lucas') {
+                        array[indice] = 'Erick'
+                    }
+
+                })
+
+                console.log(listaFuncionarios)
+                document.write('<br>' + listaFuncionarios[3])
+            */
+
+        </script>
+    </head>
+    <body>
+
+        <h1>Foreach</h1>
+        <p>
+            No JS o 'foreach' é uma função que fica abaixo do prototype do 'objeto array', pertencendo a esse. Isso significa que o foreach, no contexto do JS, é aplicado a arrays funcionando como uma função e não como uma estrutura de repetição.
+        </p>
+        <p>
+            Porém, servindo à esse propósito, ele funciona de forma muito parecida ao 'for in'.
+        </p>
+        <p>
+            O 'foreach' funciona apenas em valores numéricos e que iniciem com '0' ou superiores, mas não precisam ser sequenciais.
+        </p>
+
+    </body>
+</html>

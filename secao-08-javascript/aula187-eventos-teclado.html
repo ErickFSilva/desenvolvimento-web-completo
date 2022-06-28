@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Teclado</title>
+    <script>
+
+        /*
+            Principais eventos que podem ser capturados pelo JS com o uso do teclado:
+            https://www.w3schools.com/jsref/dom_obj_event.asp
+
+            onkeydown - é acionado no momento em que uma tecla é precionada;
+            onkeypress - é acionado no instante em que a tecla é mantida precionada e que a tecla represente um caractere;
+            onkeyup - é acionado no momento em que a tecla é liberada;
+        */
+
+        function acao() {
+            alert('Evento disparado')
+        }
+
+    </script>
+</head>
+<body>
+
+    <form>
+        <label>
+            - onkeydown:<br>
+            <input onkeydown="acao()" type="text">
+        </label>
+        <br><br>
+        <label>
+            - onkeypress:<br>
+            <input onkeypress="acao()" type="text">
+        </label>
+        <br><br>
+        <label>
+            - onkeyup:<br>
+            <input onkeyup="acao()" type="text">
+        </label>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipulando estilos de elementos</title>
+    <link rel="stylesheet" href="aula193.css">
+    <script>
+        function modificaEstilo(corDeFundo, larg, altu) {
+            
+            document.getElementById('quadrado').style.backgroundColor = corDeFundo
+            document.getElementById('quadrado').style.width = larg
+            document.getElementById('quadrado').style.height = altu
+
+        }
+    </script>
+</head>
+<body>
+
+    <!--
+        https://www.w3schools.com/jsref/dom_obj_style.asp
+    -->
+    
+    <h2>Manipulando estilo</h2>
+    <button type="button" onclick="modificaEstilo('#ff0000', '100px', '200px')">Vermelho</button>
+    <button type="button" onclick="modificaEstilo('#00ff00', '200px', '100px')">Verde</button>
+    <button type="button" onclick="modificaEstilo('#0000ff', '200px', '200px')">Azul</button>
+
+    <hr>
+
+    <div id="quadrado" class="quadradoCor"></div>
+
+</body>
+</html>

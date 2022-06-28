@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Assignment</title>
+    <script>
+
+        // Objeto:
+        let produto = {
+            descricao: 'Notebook',
+            preco: 1800,
+            detalhes: { // Composição tem um
+                fabricante: 'abc',
+                modelo: 'xyz'
+            }
+        }
+
+
+        // Desestruturação:
+        let { descricao, preco } = produto
+        console.log(descricao, preco)
+
+        let { descricao: d, preco: p } = produto
+        console.log(d, p)
+
+        let { descricao: d2, preco: p2, desconto: dc} = produto
+        console.log(`${d2}, ${p2}, (este atributo não existe no objeto: ${dc})`)
+
+        let { descricao: d3, preco: p3 = 1000, desconto: dc3 = 5 } = produto
+        console.log(d3, p3, dc3)
+
+        let { detalhes: { fabricante: f1, modelo: m1 } } = produto
+        console.log(`Fabricante: ${f1}, modelo: ${m1}`)
+
+    </script>
+</head>
+<body>
+
+    <h2>Destructuring</h2>
+    <p>
+        - Operador destructuring: é um operador de desestruturação retirando valores de dentro de uma estrutura. Essa estrutura pode ser um array ou um objeto.
+    </p>
+
+    <dl>
+        <dt>Composição:</dt>
+            <dd>1. Quando criamos objetos a partir de objetos literais, funções construtoras ou classes temos uma "composição é um". Então aquele objeto é alguma coisa.</dd>
+            <dd>2. Mas quando existe uma relação de atribuição de um objeto como sendo o valor de algum atributo de outro objeto nós temos a "composição tem um".</dd>
+    </dl>
+
+    <dl>
+        <dt>Tokens:</dt>
+            <dd>1. Array => []</dd>
+            <dd>2. Objeto => {}</dd>
+    </dl>
+    
+</body>
+</html>

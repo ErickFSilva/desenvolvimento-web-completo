@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <h1>Curso de Javascript</h1>
+        </header>
+
+        <seciton>
+            <header>
+                <h2>O que são operadores lógicos?</h2>
+            </header>
+
+            <article>
+                <header>
+                    <h2>Operadores:</h2>
+                </header>
+
+                <div>
+                    <p>
+                        <strong>E (&&)</strong> - Verdadeiro se todas as expressões forem verdadeiras;
+                    </p>
+                    <p>
+                        <strong>OU (||)</strong> - Verdadeira se pelo menos uma das expressões for verdadeira;
+                    </p>
+                    <p>
+                        <strong>Negação (!)</strong> - Inverte o resultado da expressão de comparação;
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <h2>Praticando com operadores lógicos</h2>
+                </header>
+
+                <div>
+                    <script src="js/aula163-operadores-logicos.js"></script>
+                </div>
+                <br>
+                <div>
+                    <script>
+
+                        var nota = prompt('Digite a nota do aluno:')
+                        var faltas = prompt('Digite a quantidades de faltas:')
+                        var media = 7
+                        var faltasMax = 15
+
+                        if (nota >= media && faltas <= faltasMax) {
+                            document.write('Aprovado!')
+                        } else {
+                            document.write('Reprovado!')
+                        }
+
+                    </script>
+                </div>
+            </article>
+        </seciton>
+    </main>
+
+</body>
+</html>

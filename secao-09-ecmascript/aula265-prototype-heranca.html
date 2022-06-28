@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portotype - Herança</title>
+    <script>
+
+        // Objetos literais - Todos são filhos de Object.prototype
+
+        // Cuidado com isso, dessa forma o atributo ou método será global para a aplicação. Todo objeto criado terá essa informação.
+        Object.prototype.attr50 = 'z'
+
+        let animal = {
+            attr1: 'a'
+        }
+
+        let vertebrado = {
+            __proto__: animal,
+            attr2: 'b'
+        }
+
+        let ave = {
+            __proto__: vertebrado,
+            attr3: 'c',
+        }
+
+        console.log(ave.attr3, ave.attr2, ave.attr1, ave.attr50)
+
+    </script>
+</head>
+<body>
+    
+    <!-- 
+        1. Todos os objetos em javascript descende de 'object'.
+        2. Prototype é um modelo, um padrão, um primeiro tipo de alguma coisa. Sempre quando é criado um objeto dentro do JS esse objeto é automaticamente um descendente de 'object', com isso, métodos e atributos de 'object' são herdados dentro de objeto que foi criado. Existe uma relação de herança de forma implícita sem que seja necessário indicar isso na criação do objeto.
+        4. O 'object' não é um objeto é uma função. Por isso que na escência do JS objetos são funções.
+     -->
+
+</body>
+</html>

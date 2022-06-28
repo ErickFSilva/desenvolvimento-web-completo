@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Estrutura de repetição: for in</title>
+        <script>
+
+            // 'Jorge', 'Jamilton', 'José', 'Ana', 'Maria'
+
+            var listaConvidados = Array()
+            listaConvidados[10] = 'Jorge'
+            listaConvidados[3] = 'Jamilton'
+            listaConvidados['5'] = 'José'
+            listaConvidados[-1] = 'Ana'
+            listaConvidados[true] = 'Maria'
+
+            for(var posicao in listaConvidados) {
+                console.log(listaConvidados[posicao])
+            }
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

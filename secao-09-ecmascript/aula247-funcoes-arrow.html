@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Funções Arrow</title>
+    <script>
+
+        // Função anônima comum
+        let quadrado = function(x = 5) {
+            return x * x
+        }
+
+        console.log(quadrado(2))
+        document.write(quadrado(2) + '<br>')
+
+        // Arrow function - opção 1
+        let quadrado1 = (x) => {  // Se está passando mais um parâmetro ou nenhum, usa-se os parênteses
+            return x * x
+        }
+
+        console.log(quadrado(3))
+        document.write(quadrado1(3) + '<br>')
+
+        // Arrow function - opção 2
+        let quadrado2 = x => { // Se está passando apenas um parâmetro, pode-se omitir os parênteses
+            return x * x
+        }
+
+        console.log(quadrado(4))
+        document.write(quadrado2(4) + '<br>')
+
+        // Arrow function - opção 3 (return implícito)
+        let quadrado3 = x => x * x // Quando há apenas uma instrução de retorno, não tem um bloco de lógica, não precisamos utilizar o 'abre e fecha chaves' e o 'return'.
+
+        console.log(quadrado(5))
+        document.write(quadrado3(5) + '<br>')
+
+
+        // Exemplo de função arrow complexa
+        let parOuImpar = numero => numero % 2 === 0 ? 'Par' : 'Ímpar' // if ternário com retorno implícito
+
+        console.log(parOuImpar(8))
+        document.write(parOuImpar(8))
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

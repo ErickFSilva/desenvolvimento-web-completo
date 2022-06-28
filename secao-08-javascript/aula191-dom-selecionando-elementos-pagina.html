@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Selecionando elementos da página</title>
+</head>
+<body>
+    
+    <!--
+        - getElementById(): recupera o elemento HTML a partir da propriedade ID.
+            O ID é uma identificação única no elemento, em páginas diferentes não há problemas em ter IDs iguais mas na mesma página, no mesmo script, no mesmo body, não poderá ter IDs repetidos.
+            Isso porque o elemento getElementById() espera recuperar apenas um único elemento. Ele é muito utilizado no dia-a-dia.
+
+        - getElementsByTagName(): recupera o elemento HTML a partir do NOME DA TAG.
+        
+        - getElementsByClassName(): recupera o elemento HTML a partir da propriedade CLASS.
+        
+        - getElementsByName(): recupera o elemento HTML a partir da propriedade NAME.
+    -->
+
+    <form>
+        <input 
+            type="text"
+            placeholder="Digite seu nome"
+            id="nome_usuario"
+            class="campo_texto"
+            name="nome"
+        >
+    </form>
+    
+    <script>
+        console.log(document.getElementById('nome_usuario'))
+        console.log(document.getElementsByTagName('input'))
+        console.log(document.getElementsByClassName('campo_texto'))
+        console.log(document.getElementsByName('nome'))
+    </script>
+
+</body>
+</html>

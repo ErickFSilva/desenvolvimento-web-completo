@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Array inclusão e exclusão de elementos</title>
+    <script>
+
+        // ARRAY SIMPLES
+
+        var lista_frutas = Array()
+        lista_frutas[0] = 'Banana'
+        lista_frutas[1] = 'Maçã'
+
+        document.write(lista_frutas)
+        document.write('<br>')
+        document.write('<br>')
+
+
+        // Incluir elemento no início do array
+        lista_frutas.unshift('Morango')
+
+        // Incluir elemento no final do array
+        lista_frutas.push('Uva')
+
+        document.write(lista_frutas)
+        document.write('<br>')
+        document.write('<br>')
+
+
+        // Excluir elemento no início do array
+        lista_frutas.shift()
+
+        // Excluir elemento no final do array
+        lista_frutas.pop()
+
+        document.write(lista_frutas + '<hr>')
+
+
+        // ARRAY MULTIDIMENCIONAL
+
+        var lista_coisas = Array()
+        
+        lista_coisas['Carros'] = Array()
+        lista_coisas['Carros'][0] = 'Pálio'
+        lista_coisas['Carros'][1] = 'Gol'
+        lista_coisas['Carros'][2] = 'Onix'
+
+        lista_coisas['Motos'] = Array()
+        lista_coisas['Motos'] = ['START160', 'FAN160', 'TITAN160']
+
+        document.write(lista_coisas['Carros'])
+        document.write('<br>')
+        document.write(lista_coisas['Motos'])
+        document.write('<br>')
+        document.write('<br>')
+
+        lista_coisas['Carros'].unshift('Ka') // Adiciona no início
+        lista_coisas['Motos'].push('Twister') // Adiciona no final
+
+        lista_coisas['Motos'].shift() // remove do início
+        lista_coisas['Carros'].pop() // remove do final
+
+        document.write(lista_coisas['Carros'])
+        document.write('<br>')
+        document.write(lista_coisas['Motos'])
+        document.write('<br>')
+        document.write('<br>')
+
+    </script>
+</head>
+<body>
+
+
+
+</body>
+</html>

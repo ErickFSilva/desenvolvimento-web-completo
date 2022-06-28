@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Objetos literais - Melhorias de notaçao</title>
+
+    <script>
+
+        function dadosPessoais() {
+
+            let nome = document.getElementById('nome').value
+            let idade = document.getElementById('idade').value
+            let sexo = document.getElementById('sexo').value
+            let profissao = document.getElementById('profissao').value
+
+            let objeto = {
+                nome: nome,
+                idade: idade,
+                sexo: sexo,
+                profissao: profissao,
+                
+                exibirResumo: function() {
+                    // console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+                    let dadosTela = `${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}\n`
+                    document.getElementById('tela').value = dadosTela
+                }
+            }
+
+            console.log(objeto)
+            objeto.exibirResumo()
+
+            let objeto2 = {
+                nome,
+                idade,
+                sexo,
+                profissao,
+                
+                exibirResumo2() {
+                    //console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+                    let dadosTela2 = `${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}\n`
+                    document.getElementById('tela').value += dadosTela2
+                }
+            }
+
+            console.log(objeto2)
+            objeto2.exibirResumo2()
+
+        }
+    
+    </script>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>Pessoal</legend>
+
+            <label>Nome:
+                <input type="text" id="nome">
+            </label>
+            <br>
+            <br>
+            <label>Idade:
+                <input type="number" id="idade">
+            </label>
+            <br>
+            <br>
+            <span>Sexo:</span>
+            <label>
+                <input type="radio" id="sexo" name="sexo" value="Masculino"> Masculino
+            </label>
+            <label>
+                <input type="radio" id="sexo" name="sexo" value="Feminino"> Feminino
+            </label>
+            <br>
+            <br>
+            <label>Profissão:
+                <input type="text" id="profissao">
+            </label>
+
+        </fieldset>
+
+        <input type="button" onclick="dadosPessoais()" value="Executar">
+    </form>
+
+    <textarea id="tela" rows="5" cols="50" style="background-color: antiquewhite;"></textarea>
+
+</body>
+</html>

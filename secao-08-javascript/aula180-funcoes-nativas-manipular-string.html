@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções nativas para manipular string</title>
+</head>
+<body>
+    
+    <script>
+
+        // https://www.w3schools.com/jsref/jsref_obj_string.asp
+
+        var nome = ' Erick Ferreira da Silva '
+
+        // Atributos:
+
+        // length: retorna a quantidade de caracteres de um string. Cada caractere ocupa uma posição, sendo as posições iniciadas com 0.
+        document.write('Erick Ferreira'.length)
+
+
+        // Métodos:
+
+        // charAt(): retorna um caracter, com base na posição do mesmo, dentro da cadeia de caracteres.
+        document.write('<br>')
+        document.write('Erick Ferreira'.charAt(6))
+
+        // indexOf(): retorna a posição, da primeira ocorrência, de um valor específico dentro da string.
+        document.write('<br>')
+        document.write(nome.indexOf('F')) // Esse método é case sencitive
+
+        // replace(): permite com base em valor de pesquisa, e também em outro valor de modificação, substituir texto dentro de um string.
+        document.write('<br>')
+        document.write(nome.replace('da Silva', '- PROGRAMADOR'))
+
+        // substr(): permite extrair parte de um string com base em uma posição inicial, seguida de um valor que representa a quantidade à frente a partir daquela posição inicial. Seria como se ele recorta-se uma parte da string.
+        document.write('<br>')
+        document.write('#' + nome.substr(6,8))
+
+        // toLowerCase(): converte todos os caracteres, de um string, para caixa baixa. Ou seja, em caracteres minúsculos.
+        // toUpperCase(): converte todos os caracteres, de um string, para caixa alta. Ou seja, em caracteres maiúsculos.
+        document.write('<br>')
+        document.write(nome.toLowerCase())
+        document.write('<br>')
+        document.write(nome.toUpperCase())
+        document.write('<br>')
+        document.write(nome.substr(0,6) + nome.substr(6,8).toUpperCase() + nome.substr(14,9))
+
+        // trim(): remove os espaço em branco das extremidades da string.
+        document.write('<br>')
+        document.write('-' + nome + '-')
+        document.write('<br>')
+        document.write('-' + nome.trim() + '-')
+
+        // valueOf(): retorna o valor primitivo de um string ou um objeto string.
+        document.write('<br>')
+        document.write(nome.valueOf())
+
+    </script>
+
+</body>
+</html>

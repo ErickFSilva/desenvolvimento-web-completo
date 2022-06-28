@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM - Window</title>
+    <script>
+
+        var janela
+
+        function abrirPopUp() {
+            janela = window.open('https://www.google.com', 'NovaJanela', 'width=600, height=500')
+        }
+
+        function fecharPopUp() {
+            janela.close()
+        }
+
+    </script>
+</head>
+<body>
+    
+    <!--
+        - DOM: Document Object Model
+            1. Objeto Window: é a janela do browser onde todo o conteúdo é renderizado. É um objeto formado pelo browser que encorpora a árvore de elementos html da página.
+            
+            Dentro do Window temos:
+
+            - BOM: https://www.w3schools.com/jsref/obj_location.asp
+                1.Brouse Object Model (BOM): API que permite o acesso, via JS, a recursos do browser.
+
+                    1.1. Objeto Document: fornece acesso aos elementos html da página.
+    -->
+
+    <button onclick="abrirPopUp()">Abrir janela</button>
+    <button onclick="fecharPopUp()">Fechar janela</button>
+    <button onclick="window.print()">Imprimir página</button>
+
+</body>
+</html>

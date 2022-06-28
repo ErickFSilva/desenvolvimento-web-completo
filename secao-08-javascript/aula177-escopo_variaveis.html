@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de variáveis</title>
+</head>
+<body>
+    
+    <script>
+
+        /**
+         * Tipos de escopos de variáveis:
+         * 1. Global;
+         * 2. função;
+         * 3. Bloco;
+         */
+
+        // Variável de escopo global:
+        var serie = 'Friends'
+
+        // Escopo de bloco:
+        if (true) {
+
+            // Variável de bloco:
+            var serie2 = 'Game Of Thrones' // Essa variável sofrerá um hoisting, "elevação", para o escopo global
+            
+            document.write(serie)
+
+        }
+
+        document.write('<br>')
+        document.write(serie2)
+        document.write('<br>')
+
+        // Escopo de função:
+        function x() {
+
+            // Variável de função:
+            var serie3 = 'The Walking Dead' // Essa variável sofrerá um hoisting, "elevação", para o escopo global. Fica disponível somente nesse escopo.
+
+            document.write(serie)
+            document.write('<br>')
+            document.write(serie2)
+        }
+
+        x()
+
+        document.write('<br>')
+        document.write(serie3)
+
+    </script>
+
+</body>
+</html>

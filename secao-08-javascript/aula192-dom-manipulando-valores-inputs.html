@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>DOM - Manipulando valores de inputs</title>
+        <script>
+            function distribuiCaracter() {
+                // Selecionar o valor digitado
+                var caracter = document.getElementById('entrada').value
+
+                // Limpar o campo da digitação
+                document.getElementById('entrada').value = ''
+
+                // Limpar espaços em branco nas extremidades da string
+                caracter.trim()
+
+                switch(caracter) {
+                    case '0':
+                    case '1':
+                    case '2':
+                    case '3':
+                    case '4':
+                    case '5':
+                    case '6':
+                    case '7':
+                    case '8':
+                    case '9':
+                        console.log(caracter)
+                        // Adicionar o caracter no campo referente a números
+                        document.getElementById('apenasNumeros').value += caracter
+                    break;
+
+                    default:
+                        console.log(caracter)
+                        // Adicionar o caracter no campo referente a letras
+                        document.getElementById('apenasLetras').value += caracter
+                }
+            }
+        </script>
+    </head>
+    <body>
+
+        <!--
+            Verifica o caracter digitado, se letra vai para o campo "letras", senão, vai para o campo "números".
+        -->
+
+        <form>
+            <fieldset>
+                <legend>Entrada de caracteres</legend>
+                <input type="text" placeholder="Digite um caracter aqui!" id="entrada" onkeyup="distribuiCaracter()">
+            </fieldset>
+
+            <fieldset>
+                <legend>Números</legend>
+                <input type="text" disabled="disable" id="apenasNumeros">
+            </fieldset>
+
+            <fieldset>
+                <legend>Letras</legend>
+                <input type="text" disabled="disabled" id="apenasLetras">
+            </fieldset>
+        </form>
+
+    </body>
+</html>

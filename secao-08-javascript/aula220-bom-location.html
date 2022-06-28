@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM - Location</title>
+    <script>
+
+        //window.location.href="https://www.google.com"
+
+    </script>
+</head>
+<body>
+    
+    <!--
+        - DOM: Document Object Model
+            1. Objeto Window: é a janela do browser onde todo o conteúdo é renderizado. É um objeto formado pelo browser que encorpora a árvore de elementos html da página.
+            
+            Dentro do Window temos:
+
+            - BOM: https://www.w3schools.com/jsref/obj_location.asp
+                1.Brouse Object Model (BOM): API que permite o acesso, via JS, a recursos do browser.
+
+                    1.1. Objeto Document: fornece acesso aos elementos html da página.
+
+                    1.2. Objeto Screen: fornece acesso a atributos relativos à tela do browser. Atravez do objeto screen podemos ter acesso, por exemplo, a informações de largura e altura da parte interna do navegador onde os elementos html são renderizados.
+
+                    1.3. Objeto Location: fornece acesso à atributos e métodos da URL atual, ou seja, do path onde estamos naquele momento. Atravez desse objeto podemos forçar um redirecionamento afetando a URL da aplicação ou mesmo podemos atualizar a página a partir do método reload.
+    -->
+
+    <button onclick="window.location.href='https://www.google.com.br'">Google</button>
+    <button onclick="window.location.href='https://www.w3schools.com'">W3Schools</button>
+    <button onclick="window.location.href='https://www.faus.com.br'">Faus</button>
+
+</body>
+</html>

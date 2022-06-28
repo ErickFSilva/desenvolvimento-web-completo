@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de fixação de conteúdo</title>
+</head>
+<body>
+
+    <h2>Aplicação para efetuar cálculo aritméticos de soma ou subtração</h2>
+    <hr>
+
+    <script>
+
+        var tipoOper = prompt('Tipo da operação: "soma" ou "subtração"')
+        var valor1 = parseFloat(prompt('1º valor:'))
+        var valor2 = parseFloat(prompt('2º valor:'))
+
+        function calcula(tipoOper, valor1, valor2) {
+
+            if (tipoOper == 'soma') {
+                return valor1 + valor2
+            }
+            else if (tipoOper == 'subtração') {
+                return valor1 - valor2
+            }
+            else {
+                return 'Operação inválida!'
+            }
+
+        }
+
+        var resultado = calcula(tipoOper, valor1, valor2)
+        document.write('O resultado é: ' + resultado)
+
+    </script>
+</body>
+</html>

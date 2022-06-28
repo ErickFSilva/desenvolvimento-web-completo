@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Mouse</title>
+    <style type="text/css">
+        div {
+            width: 150px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            background: #ccc;
+        }
+    </style>
+    <script>
+
+        /* 
+            Principais eventos que podem ser capturados pelo JS com o uso do mouse:
+            https://www.w3schools.com/jsref/dom_obj_event.asp
+            
+            onclick - é acionado quando o elemento é clicado;
+            ondblclick - é acionado quando o elemento é clicado duas vezes;
+            onmouseup - é acionado quando o click sobre um determinado elemento é liberado;
+            onmouseover - é acionado quando o cursor do mouse sobrepoem um elemento;
+            onmouseout - é acionado quando o cursor do mouse sai da região da página ocupada pelo elemento;
+        */
+
+        function acao() {
+            alert('Evento disparado')
+        }
+
+        function acao2() {
+            alert('O cursor do mouse deixou a região do elemento')
+        }
+
+    </script>
+</head>
+<body>
+
+    <div onclick="acao()">
+        <p>onclick</p>
+    </div>
+
+    <div ondblclick="acao()">
+        <p>onbdlclick</p>
+    </div>
+
+    <div onmouseup="acao()">
+        <p>onmouseup</p>
+    </div>
+
+    <div onmouseover="acao()">
+        <p>onmouseover</p>
+    </div>
+
+    <div onmouseout="acao()">
+        <p>onmouseout</p>
+    </div>
+
+    <div onclick="acao()" onmouseout="acao2()">
+        <p>Ações combinadas</p>
+    </div>
+    
+</body>
+</html>
