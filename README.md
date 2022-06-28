@@ -1,5 +1,5 @@
 # Desenvolvimento Web Completo
-Arquivos do curso de mesmo nome
+Arquivos desenvolvidos no curso de mesmo nome na udemy.com
 
  - HTML5
  - CSS3
