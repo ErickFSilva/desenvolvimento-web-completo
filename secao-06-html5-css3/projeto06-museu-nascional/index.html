@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible: IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu Nacional</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Aber container -->
+    <div id="container">
+
+        <!-- Abre cabeçalho -->
+        <header>
+
+            <!-- Abre logo -->
+            <div id="logo">
+                <h1><a href="#">Museu Nacional</a></h1>
+            </div>
+            <!-- Fecha logo -->
+
+            <!-- Abre navegação principal -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Exposições</a></li>
+                    <li><a href="#">Pesquisa</a></li>
+                    <li><a href="#">Acervo</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- Fecha navegação principal -->
+
+            <div class="clear"></div>
+
+        </header>
+        <!-- Fecha ceçalho -->
+
+        <!-- Abre principal -->
+        <div id="principal">
+
+            <!-- Abre conteúdo -->
+            <div id="conteudo">
+                
+                <!-- Abre seção capa -->
+                <section id="capa">
+                    <img src="imagens/museu.png" alt="museu">
+                </section>
+                <!-- Fecha seção capa -->
+
+            </div>
+            <!-- Fecha conteúdo -->
+
+            <!-- Abre aside -->
+            <aside>
+                
+                <!-- Abre seção depoimentos -->
+                <section id="depoimentos">
+                    <img src="imagens/depoimento.png" alt="depoimento">
+                </section>
+                <!-- Fecha seção depoimentos -->
+
+                <!-- Abre seção visita -->
+                <section id="visita">
+                    <h4>Faça uma visita</h4>
+                    
+                    <form>
+                        <fieldset>
+                            <legend>Selecione uma data</legend>
+
+                            <label>
+                                Data: <input class="campo" type="date" name="data">
+                            </label>
+
+                            <label>
+                                Qtd. pessoas: <input class="campo" type="number" name="qtd" value="1" min="1" max="50">
+                            </label>
+                        </fieldset>
+
+                        <input class="botao" type="submit" value="Verificar disponibilidade">
+                    </form>
+                </section>
+                <!-- Fecha seção visita -->
+
+                <!-- Abre galeria -->
+                <section id="galeria">
+                    <h4>Galeria de fotos</h4>
+
+                    <!-- Abre galeria ítens -->
+                    <div id="galeria-itens">
+                        <a href="#">
+                            <img src="imagens/imagem1.jpg" alt="imagem1">
+                        </a>
+                        <a href="#">
+                            <img src="imagens/imagem2.jpg" alt="imagem2">
+                        </a>
+                        <a href="#">
+                            <img src="imagens/imagem3.jpg" alt="imagem3">
+                        </a>
+                        <a href="#">
+                            <img src="imagens/imagem4.jpg" alt="imagem4">
+                        </a>
+                    </div>
+                    <!-- Fecha galeria ítens -->
+
+                </section>
+                <!-- Fecha galeria -->
+
+            </aside>
+            <!-- Fecha aside -->
+
+            <div class="clear"></div>
+
+        </div>
+        <!-- Fecha principal -->
+
+    </div>
+    <!-- Fecha container -->
+    
+</body>
+</html>
