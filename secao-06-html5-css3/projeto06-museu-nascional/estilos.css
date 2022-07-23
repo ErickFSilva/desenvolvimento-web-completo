@@ -73,7 +73,6 @@ nav ul li a:hover {
 #conteudo {
     width: 710px;
     float: left;
-    background-color: green;
 }
 
 aside {
@@ -128,7 +127,12 @@ input.botao {
 
 
 /* Galeria */
-section#galeria h4 { padding: 0 27px;}
+h4 {
+    margin-bottom: 0;
+    padding: 0 0 3px 27px;
+    text-transform: uppercase;
+    color: #86521a;
+}
 
 #galeria-itens {
     /* border: 1px solid tomato; */
@@ -149,6 +153,52 @@ section#galeria h4 { padding: 0 27px;}
     margin: 3px 0 0 0;
     width: 93px;
     height: 93px;
+}
+
+
+/* Postagens */
+h3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #227115;
+}
+
+article#video {
+    margin-left: 25px;
+    width: 310px;
+    float: left;
+}
+
+article#mapa {
+    margin-left: 37px;
+    width: 310px;
+    float: left;
+}
+
+article#exposicoes {
+    margin: 15px 0 0 25px;
+    width: 310px;
+    float: left;
+}
+
+article#historia {
+    margin: 15px 0 0 37px;
+    width: 310px;
+    float: left;
+}
+
+
+/* Rodape */
+footer {
+    margin-top: 20px;
+    padding: 20px 0 30px;
+    text-align: center;
+    background: url(imagens/fundo-rodape.png) no-repeat center top;
+}
+
+footer>p a {
+    padding: 2px 10px;
 }
 
 
